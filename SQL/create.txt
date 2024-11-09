@@ -1,0 +1,28 @@
+-- Deletar o banco de dados 'b6_37467048_poupaagua'
+DROP DATABASE IF EXISTS b6_37467048_poupaagua;
+
+-- Criar  banco de dados 'b6_37467048_poupaagua'
+CREATE DATABASE IF NOT EXISTS b6_37467048_poupaagua;
+
+-- Utilizando o banco de dados recém-criado
+USE b6_37467048_poupaagua;
+
+--  Criar tabela current_weather
+CREATE TABLE location (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(60),
+    region VARCHAR(60),
+    country VARCHAR(60),
+    lat DECIMAL(10, 7),
+    lon DECIMAL(10, 7),
+    localtime DATETIME,
+	last_updated DATETIME, --data de ultima atualizacao meteorologica
+    temp_c DECIMAL(4, 2), -- temperatura do momento
+    condition_text VARCHAR(50),
+    condition_icon VARCHAR(255), -- url de icons
+    wind_kph DECIMAL(5, 2), -- velocidade vento
+    pressure_mb DECIMAL(5, 2), -- pressao atmosferica PA
+    humidity INT,
+    windchill_c DECIMAL(4, 2), --sensação termica
+    
+);

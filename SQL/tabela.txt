@@ -1,0 +1,97 @@
+Vou te fornecer o SQL para criar a tabela historico_clima e o código básico para um CRUD (Create, Read, Update, Delete) para manipular os dados na tabela.
+
+1. Criar a Tabela historico_clima
+sql
+Copiar código
+DROP TABLE IF EXISTS historico_clima;
+
+CREATE TABLE historico_clima (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data_registro TIMESTAMP,
+    cidade VARCHAR(100) NOT NULL,
+	latitude DECIMAL(7, 4),
+    longitude DECIMAL(7, 4),
+    data_atualizacao DATETIME NOT NULL,
+    condicao_tempo VARCHAR(100) NOT NULL,
+    temp_atual DECIMAL(4,1) NOT NULL,
+    temp_max DECIMAL(4,1) NOT NULL,
+    temp_min DECIMAL(4,1) NOT NULL,
+    pressao INT NOT NULL, -- pressao atmosferica PA
+    umidade INT NOT NULL,
+    vento_kmh DECIMAL(4,1) NOT NULL,
+    chance_chuva DECIMAL(4, 1) NOT NULL,
+    nascer_sol TIME,
+    por_sol TIME
+);
+2. CRUD para historico_clima
+Inserir Dados (Create)
+sql
+Copiar código
+INSERT INTO historico_clima (
+    cidade,
+    data_atualizacao,
+	latitude,
+	longitude,
+    condicao_tempo,
+    temp_atual,
+    temp_max,
+    temp_min,
+    pressao,
+    umidade,
+    vento_kmh,
+    chance_chuva,
+    nascer_sol,
+    por_sol
+) VALUES (
+    'Campo Limpo Paulista - SP',
+    '2024-11-02 01:30:00',
+	-22.55,
+	-47.9,
+    'Possibilidade de chuva irregular',
+    18.0,
+    28.0,
+    17.0,
+    1015,
+    86,
+    5,
+    89,
+    '05:25:00',
+    '18:19:00'
+);
+Consultar Dados (Read)
+Para listar todos os registros:
+
+sql
+Copiar código
+SELECT * FROM historico_clima;
+Para buscar registros de uma data específica:
+
+sql
+Copiar código
+SELECT * FROM historico_clima WHERE data_atualizacao = '2024-11-02 01:30:00';
+Atualizar Dados (Update)
+Atualizar as informações de clima para um registro específico (exemplo com id = 1):
+
+sql
+Copiar código
+UPDATE historico_clima
+SET 
+    condicao_tempo = 'Tempo nublado',
+    temp_atual = 20.0,
+    temp_max = 30.0,
+    temp_min = 18.0,
+    pressao = 1018,
+    umidade = 85,
+    vento_kmh = 6,
+    chance_chuva = 70,
+    nascer_sol = '05:30:00',
+    por_sol = '18:25:00'
+WHERE id = 1;
+Excluir Dados (Delete)
+Para excluir um registro específico (exemplo com id = 1):
+
+sql
+Copiar código
+DELETE FROM historico_clima WHERE id = 1;
+Observações
+Esse código básico de CRUD permite inserir, consultar, atualizar e excluir registros na tabela historico_clima. Em um ambiente de produção, é importante configurar controles de acesso e tratamentos para prevenir SQL injection, especialmente para entradas de usuário.
