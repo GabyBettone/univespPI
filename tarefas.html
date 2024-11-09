@@ -1,0 +1,536 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer"
+  data-style="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>SISPA :: Sistema Online de Irrigação Poupa Água ::</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/fullcalendar/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/editor.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/@form-validation/form-validation.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="assets/vendor/css/pages/app-calendar.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        
+        
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">              
+              <img src="assets/img/logoDashboard.png" alt="Dashboard"/>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Início -->
+            <li class="menu-header small">
+              <i class="menu-icon tf-icons ti ti-home"></i>
+              <span class="menu-header-text">Início</span>
+            </li>
+            <li class="menu-item active">
+              <a href="dashboard.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-device-desktop-analytics"></i>Dashboard</a>
+            </li>
+            <li class="menu-item">
+              <a href="historicoclima.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-device-desktop-analytics"></i>Histórico Clima</a>
+            </li>   
+
+            <!-- Configurações -->
+            <li class="menu-header small">
+              <i class="menu-icon tf-icons ti ti-settings"></i>
+              <span class="menu-header-text">Configurações</span>
+            </li>
+            <li class="menu-item">
+              <a href="tarefas.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-calendar"></i>Tarefas</a>
+            </li>
+            <li class="menu-item">              
+              <a href="conta.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-user"></i>Minha Conta</a>
+            </li>
+            <li class="menu-item">              
+              <a href="seguranca.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-lock"></i>Segurança</a>
+            </li>
+            
+            <!-- Ajuda -->
+            <li class="menu-header small">
+              <i class="menu-icon tf-icons ti ti-help"></i>
+              <span class="menu-header-text">Ajuda</span>
+            </li>
+            <li class="menu-item">
+              <a href="faq.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-book"></i>FAQ</a>
+            </li>            
+            <li class="menu-item">
+              <a href="suporte.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-lifebuoy"></i>Suporte</a>
+            </li>
+            <li class="menu-item">
+              <a href="documentacao.html" class="menu-link">
+              <i class="menu-icon tf-icons ti ti-file-description"></i>Documentação</a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme dashboard"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-md"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                    <i class="ti ti-search ti-md me-2 me-lg-4 ti-lg"></i>
+                    <span class="d-none d-md-inline-block text-muted fw-normal">Search</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">            
+
+                
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow p-0"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="assets/img/avatars/1.png" alt class="rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item mt-0" href="conta.html">
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0 me-2">
+                            <div class="avatar avatar-online">
+                              <img src="assets/img/avatars/1.png" alt class="rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-0">John Doe</h6>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1 mx-n2"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="conta.html">
+                        <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Minha Conta</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="seguranca.html">
+                        <i class="ti ti-settings me-3 ti-md"></i><span class="align-middle">Segurança</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider my-1 mx-n2"></div>
+                    </li>
+                    <li>
+                      <div class="d-grid px-2 pt-2 pb-1">
+                        <a class="btn btn-sm btn-danger d-flex" href="login.html">
+                          <small class="align-middle">Logout</small>
+                          <i class="ti ti-logout ms-2 ti-14px"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Search..."
+                aria-label="Search..." />
+              <i class="ti ti-x search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+
+            <!-- Content DESCRICAO TAREFAS-->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card tour-card">
+                    <h5 class="card-header">Página de Tarefas em desenvolvimento...</h5>
+                    <div class="card-body">
+                      
+                      <a class="modal-effect btn btn-primary" data-bs-effect="effect-newspaper" data-bs-toggle="modal" href="#modaltext">Ver descrição</a>
+                    </div>
+                    <div class="modal fade"  id="modaltext">
+                      <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                          <div class="modal-content modal-content-demo">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Página de agendamento das atividades de irrigação em desenvolvimento</h5>
+                              </div>
+                              <div class="modal-body text-start">
+                                  <p><h5>Esta funcionalidade irá automatizar o processo de irrigação por meteorologia. </p>
+                                  <p class="text-muted mb-0">
+                                    Esta função faz a verificação da previsão e históricos climáticos, além dos dados atuais de temperatura e umidade do ar, 
+                                    entre outros, influenciando na decisão de molhar ou não as plantas de acordo com sua necessidade. 
+                                    
+                              </div>
+                              <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content DESCRICAO TAREFAS-->
+            
+            <!-- Content -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="card app-calendar-wrapper">
+                <div class="row g-0">
+                  <!-- Calendar Sidebar -->
+                  <div class="col app-calendar-sidebar border-end" id="app-calendar-sidebar">
+                    <div class="border-bottom p-6 my-sm-0 mb-4">
+                      <button
+                        class="btn btn-primary btn-toggle-sidebar w-100"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#addEventSidebar"
+                        aria-controls="addEventSidebar">
+                        <i class="ti ti-plus ti-16px me-2"></i>
+                        <span class="align-middle">Adicionar</span>
+                      </button>
+                    </div>
+                    <div class="px-3 pt-2">
+                      <!-- inline calendar (flatpicker) -->
+                      <div class="inline-calendar"></div>
+                    </div>
+                    <hr class="mb-6 mx-n4 mt-3" />
+                    <div class="px-6 pb-2">
+                      <!-- Filter -->
+                      <div>
+                        <h5>Filtro de Tarefas</h5>
+                      </div>
+
+                      <div class="form-check form-check-secondary mb-5 ms-2">
+                        <input
+                          class="form-check-input select-all"
+                          type="checkbox"
+                          id="selectAll"
+                          data-value="all"
+                          checked />
+                        <label class="form-check-label" for="selectAll">Ver Todos</label>
+                      </div>
+
+                      <div class="app-calendar-events-filter text-heading">
+                        <div class="form-check form-check-danger mb-5 ms-2">
+                          <input
+                            class="form-check-input input-filter"
+                            type="checkbox"
+                            id="select-personal"
+                            data-value="personal"
+                            checked />
+                          <label class="form-check-label" for="select-personal">Irrigação</label>
+                        </div>
+                        <div class="form-check mb-5 ms-2">
+                          <input
+                            class="form-check-input input-filter"
+                            type="checkbox"
+                            id="select-business"
+                            data-value="business"
+                            checked />
+                          <label class="form-check-label" for="select-business">Superfície</label>
+                        </div>
+                        <div class="form-check form-check-warning mb-5 ms-2">
+                          <input
+                            class="form-check-input input-filter"
+                            type="checkbox"
+                            id="select-family"
+                            data-value="family"
+                            checked />
+                          <label class="form-check-label" for="select-family">Aspersão</label>
+                        </div>
+                        <div class="form-check form-check-success mb-5 ms-2">
+                          <input
+                            class="form-check-input input-filter"
+                            type="checkbox"
+                            id="select-holiday"
+                            data-value="holiday"
+                            checked />
+                          <label class="form-check-label" for="select-holiday">Localizada</label>
+                        </div>
+                        <div class="form-check form-check-info ms-2">
+                          <input
+                            class="form-check-input input-filter"
+                            type="checkbox"
+                            id="select-etc"
+                            data-value="etc"
+                            checked />
+                          <label class="form-check-label" for="select-etc">Subirrigação</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Calendar Sidebar -->
+
+                  <!-- Calendar & Modal -->
+                  <div class="col app-calendar-content">
+                    <div class="card shadow-none border-0">
+                      <div class="card-body pb-0">
+                        <!-- FullCalendar -->
+                        <div id="calendar"></div>
+                      </div>
+                    </div>
+                    <div class="app-overlay"></div>
+                    <!-- FullCalendar Offcanvas -->
+                    <div
+                      class="offcanvas offcanvas-end event-sidebar"
+                      tabindex="-1"
+                      id="addEventSidebar"
+                      aria-labelledby="addEventSidebarLabel">
+                      <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title" id="addEventSidebarLabel">Adicionar Tarefa</h5>
+                        <button
+                          type="button"
+                          class="btn-close text-reset"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Fechar"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <form class="event-form pt-0" id="eventForm" onsubmit="return false">
+                          <div class="mb-5">
+                            <label class="form-label" for="eventTitle">Título da Tarefa</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="eventTitle"
+                              name="eventTitle"
+                              placeholder="Título Tarefa" />
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventLabel">Tipo de Tarefa</label>
+                            <select class="select2 select-event-label form-select" id="eventLabel" name="eventLabel">
+                              <option data-label="primary" value="Business" selected>Irrigação</option>
+                              <option data-label="danger" value="Personal">Superfície</option>
+                              <option data-label="warning" value="Family">Aspersão</option>
+                              <option data-label="success" value="Holiday">Localizada</option>
+                              <option data-label="info" value="ETC">Subirrigação</option>
+                            </select>
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventStartDate">Data - Início</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="eventStartDate"
+                              name="eventStartDate"
+                              placeholder="Data -Início" />
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventEndDate">Data - Fim</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="eventEndDate"
+                              name="eventEndDate"
+                              placeholder="Data - Fim" />
+                          </div>
+                          <div class="mb-5">
+                            <div class="form-check form-switch">
+                              <input type="checkbox" class="form-check-input allDay-switch" id="allDaySwitch" />
+                              <label class="form-check-label" for="allDaySwitch">Todos os dias</label>
+                            </div>
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventURL">URL do local com o TOKEN da API</label>
+                            <input
+                              type="url"
+                              class="form-control"
+                              id="eventURL"
+                              name="eventURL"
+                              placeholder="http://api.weatherapi.com/v1/current.json" />
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventLocation">Localização</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="eventLocation"
+                              name="eventLocation"
+                              placeholder="Enter Location" />
+                          </div>
+                          <div class="mb-5">
+                            <label class="form-label" for="eventDescription">Descrição</label>
+                            <textarea class="form-control" name="eventDescription" id="eventDescription"></textarea>
+                          </div>
+                          <div class="d-flex justify-content-sm-between justify-content-start mt-6 gap-2">
+                            <div class="d-flex">
+                              <button type="submit" id="addEventBtn" class="btn btn-primary btn-add-event me-4">
+                                Salvar
+                              </button>
+                              <button
+                                type="reset"
+                                class="btn btn-label-secondary btn-cancel me-sm-0 me-1"
+                                data-bs-dismiss="offcanvas">
+                                Cancelar
+                              </button>
+                            </div>
+                            <button class="btn btn-label-danger btn-delete-event d-none">Deletar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Calendar & Modal -->
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                  <div class="text-body">
+                    © 2024 - SISPA, made with ❤️ by students of <a href="https://univesp.br" target="_blank" class="footer-link">UNIVESP</a>
+                  </div>                  
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/fullcalendar/fullcalendar.js"></script>
+    <script src="assets/vendor/libs/@form-validation/popular.js"></script>
+    <script src="assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+    <script src="assets/vendor/libs/@form-validation/auto-focus.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/app-calendar-events.js"></script>
+    <script src="assets/js/app-calendar.js"></script>
+  </body>
+</html>

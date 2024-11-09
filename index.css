@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizações para o topo da página */
+.topo {
+    max-width: 1080px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Estilizações para o header */
+header {
+    background-color: white;
+    width: 100%;
+    border-bottom: 3px solid rgb(42, 151, 214);
+}
+
+/* Estilizações para o logo */
+.logo {
+    width: 331px;
+    height: 84px;
+    background-color: transparent;
+}
+
+/* Estilizações para o menu */
+.menu {
+    padding-left: 35%;
+}
+
+.menu nav a {
+    color: rgb(48, 202, 61);
+    text-decoration: none;
+    padding-right: 40px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover {
+    color: rgb(14, 191, 204);
+}
+
+/* Estilizações para o rodapé */
+#rodape {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(42, 151, 214);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 20px;
+}
+
+/* Estilizações para parágrafos */
+p {
+    color: black;
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#registro{
+margin-top: 40px;
+}
+
+/* Estilizações para a seção sobre */
+.sobre {
+    background-color: rgb(95, 201, 95);
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 3vh;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+
+    
+            /* Estilizações para o slider */
+
+            .slider{
+                margin: 0 auto;
+                width: 800px;
+                height: 400px;
+                overflow: hidden;
+                margin-top: 15px;
+                border-radius: 10px;
+            }
+            
+            .slides{
+                width: 800%;
+                height: 400px;
+                display: flex;
+            }
+            
+            .slides input{
+                display: none;
+            }
+            
+            .slide{
+                width: 25%;
+                position: relative;
+            }
+            
+            .slide img{
+                width: 800px;
+                height: 400px;
+            }
+            
+            .manual-navigation{
+                position: absolute;
+                width: 800px;
+                margin-top: 350px;
+                display: flex;
+                justify-content: center;
+            }
+                         
+            .manual-btn{
+                border: 2px solid #fff;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 1s;
+            }
+            
+            .manual-btn:not(:last-child){
+                margin-right: 40px;
+            }
+            
+            .manual-btn:hover{
+                background-color: #fff;
+            }
+            
+            #radio1:checked ~ .first{
+                margin-left: 0;
+            }
+            
+            #radio2:checked ~ .first{
+                margin-left: -25%;
+            }
+            
+            #radio3:checked ~ .first{
+                margin-left: -50%;
+            }
+            
+            #radio4:checked ~ .first{
+                margin-left: -75%;
+            }
+            
+            .navigation-auto div{
+                border: 2px solid #20a6ff;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 1s;
+            }
+            
+            .navigation-auto{
+                position: absolute;
+                width: 800px;
+                margin-top: 350px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .navigation-auto div:not(:last-child){
+                margin-right: 40px;
+            }
+            
+            #rodape h1{
+                text-align: center;
+                color: #fff;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding-top: 1%;
+            }
+
+            #rodape p{
+                text-align: center;
+                color: #fff;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                line-height: -5%;
+                line-height: 1.4em
+            }
+
+            #dicas{
+                width: 100%;
+                height: 550px;
+                background-color: rgb(148, 226, 103);
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            #dicas h1{
+                text-align: center;
+                color: white;
+            }
+
+            #dicas p{
+                text-align: justify;
+                padding-left: 10px;
+                color: rgb(23, 132, 196);
+                padding-right: 10px;
+                padding-top: 10px;
+            }
+
+            
+
+
+            
+
+
+
+            
+            

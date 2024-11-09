@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto integrador</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/script.js"> </script>
+    <script>
+
+        function openWin() {
+          myWindow = window.open("dicas.html", "myWindow", "width=800,height=500,top=100,left=200");   // Opens a new window
+        }
+        
+        function closeWin() {
+          myWindow.close();   // Closes the new window
+        }
+        
+        
+            </script>
+
+</head>
+
+<body>
+    
+    <header>
+     <div class="topo">
+      <div class="logo"> <img src="logo.png"> </div>
+       <div class="menu">
+        <nav>
+         <a href="index.html"> Início </a>
+         <a href="contato.html"> Contato </a> 
+         <a href="login.html"> Login </a>
+         <a style="cursor:pointer;" onclick="openWin();"> Dicas </a>
+        </nav>
+
+</div>
+</div>
+
+    </header>
+
+
+    <div class="slider">
+
+        <div class="slides">
+            <input type="radio" name="radio-btnn" id="radio1">
+            <input type="radio" name="radio-btnn" id="radio2">
+            <input type="radio" name="radio-btnn" id="radio3">
+            <input type="radio" name="radio-btnn" id="radio4">
+
+            <div class="slide first">
+                <img src="https://irrigazine.wordpress.com/wp-content/uploads/2020/10/01042019142838.jpg" alt="imagem1"/>
+            </div>
+
+            <div class="slide">
+                <img src="https://aguaconsultoria.com.br/wp-content/uploads/servico-irrigacao-1024x683.webp" alt="imagem2"/>
+            </div>
+
+            <div class="slide">
+                <img src="https://ferdinandodesousa.com/wp-content/uploads/2018/06/irrigac3a7c3a3o.jpg?w=640" alt="imagem2"/>
+            </div>
+
+            <div class="slide">
+                <img src="https://pensamentoverde.com.br/wp-content/uploads/2015/07/pesquisa-crise.jpg" alt="imagem2"/>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btnn1"></div>
+                <div class="auto-btnn2"></div>
+                <div class="auto-btnn3"></div>
+                <div class="auto-btnn4"></div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"> </label>
+                <label for="radio2" class="manual-btn"> </label>
+                <label for="radio3" class="manual-btn"> </label>
+                <label for="radio4" class="manual-btn"> </label>
+            </div>
+
+
+
+        </div>
+    </div>
+
+<div id="rodape"> 
+
+    <H1>SOBRE NÓS</H1>
+    <p>Nosso grupo é formado por 8 integrantes, somos estudantes universitarios da Univesp<br> na área da tecnologia.
+        Esse projeto que estamos desenvolvendo tem como objetivo<br> contribuir para a economia de agua,
+        estamos desenvolvendo uma ferramenta<br> automatizada que realize a irrigação do local de acordo com a necessidade de água,<br> 
+        com isso podemos mostrar para as pessoas a importancia do nosso projeto para a economia de agua.</p>
+
+</div>
+
+
+</body>
+</html>

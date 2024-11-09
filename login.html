@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="formulario.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <script src="js/script.js"> </script>
+
+    <script>
+
+        function openWin() {
+          myWindow = window.open("dicas.html","myWindow","width=800,height=500,top=100,left=200,scrollbars=yes");   // Opens a new window
+        }
+        
+        function closeWin() {
+          myWindow.close();   // Closes the new window
+        }
+        
+        
+            </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+         <div class="logo"> <img src="logo4.png"> </div>
+          <div class="menu">
+           <nav>
+        <a href="index.html"> Início </a>
+         <a href="contato.html"> Contato </a> 
+         <a href="login.html"> Login </a>
+         <a style="cursor:pointer;" onclick="openWin();"> Dicas </a>
+         <!--<a style="cursor:pointer;" onclick="closeWin();"> Fechar </a>-->
+           </nav>
+   
+   </div>
+   </div>
+       </header>
+
+    <div id="container-login">
+        <h1 id="h1-login">
+        LOGIN
+        </h1>
+
+    <form id="">
+    <label for="nomes">Nome</label>
+    <input type="text" name="nomes" id="nomes" placeholder="Digite seu nome" >
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" >
+   
+  </form>
+  <input type="submit" onclick="logar()" value="Entrar" id="btnn-login"> 
+  <div id="registro">
+    <p>Esqueceu sua senha?</p>
+  </div>
+    
+    <input type="submit" onclick="logar()" value="Recuperar sua senha" id="btnn-login"> 
+    
+
+    <span> </span>
+    <span> </span>
+    <span> </span>
+    <span> </span>
+    <!-- <a href="#">ENTRAR</a> -->
+
+    <div id="registro">
+      <p>Ainda nao é membro?</p>
+      <input type="submit" onclick="logar()" value="Tornar-se membro" id="btnn-login"> 
+     
+    </div>
+
+    </div>
+
+
+    </body>
+    </html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizações para o topo da página */
+.topo {
+    max-width: 1080px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Estilizações para o header */
+header {
+    background-color: white;
+    width: 100%;
+    border-bottom: 3px solid rgb(42, 151, 214);
+}
+
+/* Estilizações para o logo */
+.logo {
+    width: 331px;
+    height: 84px;
+    background-color: transparent;
+}
+
+/* Estilizações para o menu */
+.menu {
+    padding-left: 35%;
+}
+
+.menu nav a {
+    color: rgb(48, 202, 61);
+    text-decoration: none;
+    padding-right: 40px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover {
+    color: rgb(14, 191, 204);
+}
+
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(42, 151, 214);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(42, 151, 214);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(48, 202, 61);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline:auto rgb(42, 151, 214);
+}
+
+textarea:focus {
+    outline:auto rgb(42, 151, 214);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(42, 151, 214);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgb(48, 202, 61);
+}
+
+.response {
+    margin-top: 20px;
+    text-align: center;
+}
