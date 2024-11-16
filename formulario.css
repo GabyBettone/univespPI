@@ -80,13 +80,6 @@ div#registro p {
     color: rgb(42, 151, 214);
 }
 
-div#registro a {
-font-size: 20px;
-text-align: center;
-color: rgb(42, 151, 214);
-text-decoration: none;
-}
-
 div#registro a:hover {  
     font-size: 22.5px;
     transition: 1s;
