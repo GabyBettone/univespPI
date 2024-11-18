@@ -7,4 +7,7 @@
 </picture>
 
 Página do projeto:          
-https://poupaagua.fagner.dev.br/assets/img/logoDashboard.png
+https://poupaagua.fagner.dev.br
+
+Página do painel da aplicação:
+https://poupaagua.fagner.dev.br/dashboard.html
